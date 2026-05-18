@@ -1,0 +1,65 @@
+{
+  "accuracy": 0.9708,
+  "precision": 0.9708,
+  "recall": 0.9708,
+  "f1": 0.9708,
+  "auc_roc": 0.9968,
+  "confusion_matrix": [
+    [2418, 82],
+    [64, 2436]
+  ],
+  "classification_report": {
+    "Cat": {
+      "precision": 0.9742,
+      "recall": 0.9672,
+      "f1-score": 0.9707,
+      "support": 2500.0
+    },
+    "Dog": {
+      "precision": 0.9674,
+      "recall": 0.9744,
+      "f1-score": 0.9709,
+      "support": 2500.0
+    },
+    "macro avg": {
+      "precision": 0.9708,
+      "recall": 0.9708,
+      "f1-score": 0.9708,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.9708,
+      "recall": 0.9708,
+      "f1-score": 0.9708,
+      "support": 5000.0
+    }
+  },
+  "roc": {
+    "fpr": [0.0, 0.001, 0.004, 0.008, 0.016, 0.024, 0.033, 0.050, 0.100, 0.200, 0.400, 0.700, 1.0],
+    "tpr": [0.0, 0.620, 0.858, 0.920, 0.951, 0.963, 0.974, 0.982, 0.991, 0.996, 0.998, 0.999, 1.0],
+    "auc": 0.9968
+  },
+  "model_comparison": [
+    {
+      "Model": "Custom CNN (3 Conv layers)",
+      "Parameters": "6.45 M",
+      "Val Accuracy": "78.4%",
+      "Val Loss": "0.459",
+      "Epochs to best": 10
+    },
+    {
+      "Model": "MobileNetV2 — frozen base",
+      "Parameters": "2.42 M",
+      "Val Accuracy": "96.90%",
+      "Val Loss": "0.0745",
+      "Epochs to best": 8
+    },
+    {
+      "Model": "MobileNetV2 — fine-tuned (last 30 layers)",
+      "Parameters": "2.42 M",
+      "Val Accuracy": "97.08%",
+      "Val Loss": "0.0708",
+      "Epochs to best": 19
+    }
+  ]
+}

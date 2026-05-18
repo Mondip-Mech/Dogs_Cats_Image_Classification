@@ -1,0 +1,30 @@
+# Source control
+.git/
+.gitignore
+
+# Credentials
+kaggle.json
+*.env
+
+# Training artifacts not needed at runtime
+*.ipynb
+evaluate.py
+.ipynb_checkpoints/
+
+# Data
+data/
+PetImages/
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
